@@ -1,0 +1,35 @@
+body{
+    min-width: none; /*pour une largeur minimale de la page*/
+    background: rgb(90, 153, 90);/*pour la couleur de fond de la page*/
+    display: flex;/*pour centrer le contenu*/
+    justify-content: center;/*pour centrer le contenu*/
+    align-items: center;/*pour rien*/
+    min-height: 100vh;/*pour une longueur minimale de la page */
+}
+
+#page{
+    background-color:#fff;/*pour la couleur de ma page*/
+    width: 100%;/*pour la largeur du page*/
+    max-width: 500px;/*pour la largeur minimale de ma page*/
+    max-height: 800px;/*pour la longueur minimale de ma page*/
+    display: grid;/*pour le partage  de ma page*/
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+header{
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+#header{
+    display: flexbox;
+}
+#gauche{
+    text-align: left;
+    display: table-cell;
+}
+#droite{
+    text-align: right;
+    background: #fd23fd;
+}
