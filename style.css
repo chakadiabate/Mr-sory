@@ -6,30 +6,40 @@ body{
     align-items: center;/*pour rien*/
     min-height: 100vh;/*pour une longueur minimale de la page */
 }
-
+:root{
+    --variable-couleur1: #fff;/*Une variable qui va me permettre de changer juste par ici */
+}
+:root{
+    --variable-couleur2: #000;/*Une variable qui va me permettre de changer juste par ici */
+}
 #page{
-    background-color:#fff;/*pour la couleur de ma page*/
+    background-color:var(--variable-couleur1);/*pour la couleur de ma page*/
     width: 100%;/*pour la largeur du page*/
     max-width: 500px;/*pour la largeur minimale de ma page*/
     max-height: 800px;/*pour la longueur minimale de ma page*/
     display: grid;/*pour le partage  de ma page*/
 }
 h1{
-    text-align: center;
-    font-weight: bold;
+    text-align: center;/*Pour centrer le text*/
+    font-weight: bold;/*pour mettre en gras*/
 }
 header{
-    width: 100%;
-    grid-template-columns: 50% 50%;
+    width: 100%;/*largeur de ma header (entête)*/
+    background-color:var(--variable-couleur2);
+    color:var(--variable-couleur1);
 }
-#header{
-    display: flexbox;
-}
+
 #gauche{
-    text-align: left;
-    display: table-cell;
+    float: left;/* Pour flotter cette à gauche*/
 }
+img {
+    width: 150px;/*largeur de l'image*/
+    height: 150px;//*longueur*/
+    padding-left: 50px;/*marge interne à gauche*/
+    }
 #droite{
-    text-align: right;
-    background: #fd23fd;
+    float: right;/* Pour flotter cette à droite*/
+    background: #fd23fd;/*couleur de fond */
+    padding-right: 100px;/*marge interne à droite*/
+    padding-top: 20px;/*marge interne en haut*/
 }
