@@ -19,7 +19,7 @@ body{
     max-height: 800px;/*pour la longueur minimale de ma page*/
     display: grid;/*pour le partage  de ma page*/
 }
-h1{
+h1, h3{
     text-align: center;/*Pour centrer le text*/
     font-weight: bold;/*pour mettre en gras*/
 }
@@ -42,4 +42,20 @@ img {
     background: #fd23fd;/*couleur de fond */
     padding-right: 100px;/*marge interne à droite*/
     padding-top: 20px;/*marge interne en haut*/
+}
+#formulaire{
+    display: grid;
+    width: 75%;
+    margin-left: 50px;
+}
+#formulaire button{
+    margin-left: 0px;
+    width: 30%;
+}
+footer{
+    margin-top: 10px;
+    padding-top: 10px;
+    width: 100%;/*largeur de ma header (entête)*/
+    background-color:var(--variable-couleur2);
+    color:var(--variable-couleur1);
 }
